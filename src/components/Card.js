@@ -2,7 +2,7 @@ import React from 'react'
 
 const Card = ({imgUrl, Title, price, description, index}) => {
   return (
-    <div className="single-card" id='index'>
+    <div className="single-card" id={index}>
           <div className="left">
             <img src={imgUrl} alt="dish img" />
           </div>

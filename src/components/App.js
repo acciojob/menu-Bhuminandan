@@ -93,7 +93,7 @@ let objArr =
 
 
     return (
-      <div  className='mainDiv'>
+      <div  id='main'>
 
       <div className='heading-div'>
           <h1 className='heading'>Out Menu</h1>
@@ -102,9 +102,9 @@ let objArr =
       
       <div className='filter-row'>
             <p onClick={() => setCatagoryValue('')} className='filter-row-item'>All</p>
-            <p onClick={() => setCatagoryValue('breakfast')} className='filter-row-item'>Breakfast</p>
-            <p onClick={() => setCatagoryValue('lunch')} className='filter-row-item'>Lunch</p>
-            <p onClick={() => setCatagoryValue('shakes')} className='filter-row-item'>Shakes</p>
+            <p onClick={() => setCatagoryValue('breakfast')} className='filter-row-item' id='filter-btn-3'>Breakfast</p>
+            <p onClick={() => setCatagoryValue('lunch')} className='filter-row-item' id='filter-btn-2'>Lunch</p>
+            <p onClick={() => setCatagoryValue('shakes')} className='filter-row-item' id='filter-btn-1'>Shakes</p>
           </div>
 
       <div className="cardsContainer">
@@ -127,12 +127,12 @@ let objArr =
               return (
 
             <Card
-            key={singleObj.id}
             imgUrl={singleObj.img}
             Title={singleObj.title}
             price={singleObj.price}
             description={singleObj.desc}
-             />
+            key={singleObj.id} 
+            />
 
               )
             })
