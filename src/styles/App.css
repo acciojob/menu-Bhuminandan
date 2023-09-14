@@ -15,7 +15,6 @@
     align-items: center;
     justify-content: center;
     margin: auto;
-
 }
 
 .heading-div{
@@ -58,7 +57,10 @@ button{
     margin: 2vh auto;
 }
 
-.filter-row-item{
+#filter-btn-0,
+#filter-btn-1,
+#filter-btn-2,
+#filter-btn-3{
     flex: 1;
     text-align: center;
     cursor: pointer;
@@ -68,11 +70,17 @@ button{
     padding-bottom: 10px;
 }
 
-.filter-row-item:hover{
+#filter-btn-0:hover,
+#filter-btn-1:hover,
+#filter-btn-2:hover,
+#filter-btn-3:hover{
     background-color: rgb(207, 207, 207);
 }
 
-.filter-row-item:active{
+#filter-btn-0:active,
+#filter-btn-1:active,
+#filter-btn-2:active,
+#filter-btn-3:active{
     transform: translateY(3px);
 }
 
