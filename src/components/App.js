@@ -101,10 +101,24 @@ let objArr =
       </div>
       
       <div className='filter-row'>
-            <p onClick={() => setCatagoryValue('')} className='filter-row-item'>All</p>
-            <p onClick={() => setCatagoryValue('breakfast')} className='filter-row-item' id='filter-btn-3'>Breakfast</p>
-            <p onClick={() => setCatagoryValue('lunch')} className='filter-row-item' id='filter-btn-2'>Lunch</p>
-            <p onClick={() => setCatagoryValue('shakes')} className='filter-row-item' id='filter-btn-1'>Shakes</p>
+            <p onClick={() => setCatagoryValue('')} 
+             className='filter-row-item'>All</p>
+
+            <p onClick={() => setCatagoryValue('breakfast')} 
+            className='filter-row-item' id='filter-btn-3'
+            data-test-id="menu-item-breakfast"
+            >Breakfast</p>
+
+            <p onClick={() => setCatagoryValue('lunch')} 
+            className='filter-row-item' id='filter-btn-2'
+            data-test-id="menu-item-lunch"
+            >Lunch</p>
+
+            <p onClick={() => setCatagoryValue('shakes')} 
+            className='filter-row-item' id='filter-btn-1'
+            data-test-id="menu-item-shakes"
+            >Shakes</p>
+
           </div>
 
       <div className="cardsContainer">
